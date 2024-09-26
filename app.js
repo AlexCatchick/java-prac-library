@@ -115,9 +115,9 @@ function clearInputModal() {
 // Sample books
 function createSampleBooks() {
     const sampleBooks = [
-        new Book("How I Met Your Mother", "Bernie Sanders", 248, true),
-        new Book("I Will Walk 500 Miles", "Robert Plant", 355, false),
-        new Book("Getting Yoked", "Abraham Lincoln", 859, true),
+        new Book("XYZ U think", "Gowler Prada", 200, true),
+        new Book("Genini", "Vinci Doga", 125, false),
+        new Book("Slaughter House", "ADjan Khischi", 451, true),
     ];
 
     sampleBooks.forEach(book => addBookToLibrary(book));
