@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="title">Library</div>
+            <button id="add-book-btn" class="add-book-btn">Add a Book</button>
+        </div>
+        <div class="main-section">
+            <dialog class="form-ask-modal hidden">
+                <div class="modal-title-container">
+                    <div class="modal-title">Add/Edit Book</div>
+                    <div id="exit-btn">X</div>
+                </div>
+                <label for="title">Title</label>
+                <input type="text" id="title-input" name="title" required>
+                <label for="author">Author</label>
+                <input type="text" id="author-input" name="author" required>
+                <label for="pages">Page Count</label>
+                <input type="number" id="pages-input" name="pages" required>
+                <label for="hasRead">Read:</label>
+                <input type="checkbox" id="read-input" name="hasRead">
+                <div class="modal-bottom-container">
+                    <button id="cancel-btn">Cancel</button>
+                    <button id="save-btn">Save</button>
+                </div>
+            </dialog>
+            <div class="cards-container"></div>
+        </div>
+    </div>    
+    <script src="app.js"></script>
+</body>
+</html>
